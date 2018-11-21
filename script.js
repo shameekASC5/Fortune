@@ -13,5 +13,5 @@ function showFortune ()
 {
     let randomIndex = randomEvenNum(1000);
     console.log(fortunes[randomIndex]);
-    document.getElementById("fortune").innerText = "\""+fortunes[randomIndex] + "\""+ " - Shameek R. Hargrave ";
+    document.getElementById("fortune").innerText = "\""+fortunes[randomIndex] + "\""+ "\n - Shameek R. Hargrave ";
 }

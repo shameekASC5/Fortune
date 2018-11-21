@@ -9,9 +9,20 @@ function randomEvenNum (upperBound)
     }
     return randomNum;
 }
+let clicks = 0;
 function showFortune () 
 {
+    clicks++;
     let randomIndex = randomEvenNum(1000);
-    console.log(fortunes[randomIndex]);
-    document.getElementById("fortune").innerText = "\""+fortunes[randomIndex] + "\""+ "\n - Shameek R. Hargrave ";
+    document.getElementById("fortune").innerText = "\""+fortunes[randomIndex] + "\"";
+    if (clicks === 1)
+    {
+        let img = document.createElement("IMG");
+        img.src = "https://media.giphy.com/media/1lvvtpIbLtlQyx9g4v/giphy.gif";
+        img.alt = "Oops";
+        document.getElementById("photo").appendChild(img);
+        let name = document.createElement("h3");
+        name.innerHTML="Shameek R. Hargrave ";
+        document.getElementById("name").appendChild(name);
+    }
 }

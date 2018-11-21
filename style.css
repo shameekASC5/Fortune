@@ -3,6 +3,31 @@
     font-style: italic; 
 }
 
+#photo img 
+{
+    width:60vh;
+    height: auto;
+}
+/* phones and tablets */
+@media (max-width: 800px) 
+{
+    #photo img 
+    {
+        width:50vh;
+    }
+}
+/* iphone x */
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) 
+    {
+        #photo img 
+        {
+            width:40vh;
+        }
+    }
+
 #button 
 {
     background-color: #e1e8f0;
